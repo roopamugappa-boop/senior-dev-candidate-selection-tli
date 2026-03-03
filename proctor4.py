@@ -137,8 +137,8 @@ async def admin_panel_post(
 
     .main-admin-container{
         max-width:1700px;
-        margin:60px auto;
-        padding:40px;
+        margin:6px auto;
+        padding:4px;
     }
 
     h2{
@@ -469,7 +469,7 @@ async def admin_panel_post(
 
     html = f"""{style}
     <div class="main-admin-container">
-        <h2>Admin Panel • Candidate Overview</h2>
+        <h2 style="text-align:left; font-size:1.05em; font-weight:600; margin-left:0; margin-bottom:10px;">Admin Panel • Candidate Overview</h2>
         <div class="table-container">
             <table class="admin-table">
                 <thead>
@@ -2164,3 +2164,4 @@ async def submit(
         import traceback
         trace = traceback.format_exc()
         return HTMLResponse(f"<h3>Oops, error occurred during submission.<br>Error: {e}</h3><pre>{trace}</pre>", status_code=500)
+
